@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    background-color: #228592;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr) repeat(2,150px) repeat(1,1fr);
+    gap:10px
+}
+.header{
+    grid-column: 1 / -1;
+    background: #03bfb1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.navigation{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    background: #80d55e;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    padding: 20px;
+}
+.aside{
+    grid-column: 1/2;
+    grid-row: 3 / 5;
+    color: #fff;
+    align-content: center;
+    text-align: center;
+    text-justify: center;
+    justify-content: center;
+    background: #68ff3a;
+}
+.content{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    color: #fff;
+    background: #4e3838;
+    padding: 20px;
+    align-content: center;
+    justify-items: center;
+}
+.section{
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    background: #2746b4;
+    color: #fff;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.footer{
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    background: #03bfb1;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    padding: 20px;
+}
